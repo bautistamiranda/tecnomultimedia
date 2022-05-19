@@ -1,0 +1,12 @@
+int mX = 300;
+int mY = 170;
+PFont fuente;
+float opacidad = 0;
+PImage Victoria;
+PImage Marisa;
+PImage Miguel;
+PImage Ryuchi;
+PImage Pedro;
+int etapa = 1;
+float posV = -mX;
+float diam = 50;
