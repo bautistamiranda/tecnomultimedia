@@ -1,1 +1,61 @@
 
+//Estudiante: Bautista Mirada Legajo: 88916/5 
+//Profesor: David Bedoian Comisión 3
+
+PImage imagen;
+
+void setup() {
+  size(800, 400);
+  imagen = loadImage("monalisa.jpg");
+}
+void draw() {
+  background(195, 203, 268);
+  // carga imagen:
+  image( imagen, 400, 0, 400, 400 );
+  strokeWeight(10);
+  //pelo parte de arriba
+  stroke(54, 25, 18);
+  strokeWeight (60);
+  fill (54, 25, 18);
+  ellipse(200, 200, 250, 300);
+  //pelo parte de abajo
+  stroke(54, 25, 18);
+  strokeWeight (30);
+  rect (62, 189, 269, 197);
+  //cara
+  fill (275, 227, 179);
+  strokeWeight (0);
+  ellipse(200, 200, 250, 300);
+  //cuello
+  stroke (275, 227, 179);
+  println (mouseX, mouseY);
+  strokeWeight (110);
+  line (187, 296, 257, 410);
+  //hombro
+  strokeWeight (40);
+  line (174, 382, 75, 410);
+  //ojos
+  strokeWeight (2);
+  stroke(54, 25, 18);
+  fill (255);
+  ellipse (124, 178, 49, 29);
+  ellipse (220, 178, 49, 29);
+  //iris
+  fill (54, 25, 18);
+  ellipse (230, 178, 27, 23);
+  ellipse (135, 178, 27, 22);
+  //pupilas
+  fill (0);
+  ellipse (230, 178, 15, 15);
+  ellipse (135, 178, 15, 15);
+  //nariz
+  strokeWeight (3);
+ line (178, 176, 154, 236);
+ noStroke ();
+  ellipse (176, 246, 10, 9);
+  //sonrisa
+  noFill ();
+  stroke (255, 184, 175);
+  strokeWeight (21);
+  arc(177, 269, 70, 25, radians(10), radians(160));
+}
